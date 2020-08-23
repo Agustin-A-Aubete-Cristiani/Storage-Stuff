@@ -1,0 +1,70 @@
+:root {
+    --transition-short: .2s; 
+    --transition-medium: .6s; 
+    --transition-long: 1.2s; 
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* border: 1px solid red; */
+}
+header {
+    background-color: tomato;
+    height:50px;
+}
+main {
+    background-color: steelblue;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+footer {
+    background-color: #333;
+    height: 50px;
+}
+.main-top, .main-mid, .main-buttom {
+    margin-bottom: 10px;
+}
+.main-top {
+    background-color: gold;
+    text-align: center;
+    padding: 10px;
+}
+.main-midd {
+    background-color: springgreen;
+}
+.storage-item {
+    background-color: #f39c12;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+}
+.storage-item img {
+    width: 100%;
+}
+.storage-item a {
+    color: #eee;
+    transition: var(--transition-short);
+    text-decoration: none;
+}
+.storage-item a:visited {
+    color: #eee;
+}
+.storage-item a:hover {
+    cursor: pointer;
+}
+.storage-item a:hover {
+    padding-left: 20px;
+    transition: var(--transition-short);
+}
+.storage-item .image {
+    max-width: 200px;
+    min-width: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    width: 30%;
+    margin-right: 30px;
+}
