@@ -8,36 +8,43 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    /* border: 1px solid red; */
 }
-header {
+body {
+    font-family: 'Russo One', sans-serif;
+}
+body a:hover {
+    text-decoration: none;
+    color: darkblue;
+}
+body a {
+    color: #343440;
+}
+/* header {
     background-color: tomato;
     height:50px;
-}
+} */
 main {
-    background-color: steelblue;
     padding: 10px;
+    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 90%;
 }
 footer {
-    background-color: #333;
     height: 50px;
 }
 .main-top, .main-mid, .main-buttom {
     margin-bottom: 10px;
 }
 .main-top {
-    background-color: gold;
+    width: 100%;
     text-align: center;
     padding: 10px;
 }
-.main-midd {
-    background-color: springgreen;
+.main-top, .card-header {
+    text-transform: uppercase;
 }
-.storage-item {
+/* .storage-item {
     background-color: #f39c12;
     margin-bottom: 10px;
     padding: 10px;
@@ -81,5 +88,30 @@ footer {
         width: 30%;
         margin-right: 30px;
     }
-
-}
+} */
+    .list-group-item {
+        height:80px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-img-top {
+        width: 150px;
+        height: 40%;
+        margin: 0 auto;
+        display: flex;
+    }
+    .card-img-top img {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    @media (min-width: 900px) {
+        main {
+            width: 60%;
+        }
+    }
+    @media (max-width: 500px) {
+        .main-top h1 {
+            font-size: 32px;
+        }
+    }
